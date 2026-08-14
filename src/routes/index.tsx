@@ -162,7 +162,7 @@ function Index() {
               href={`tel:${PHONE_TEL}`}
               className="hidden text-sm font-semibold text-muted-foreground hover:text-foreground sm:block"
             >
-              {PHONE_DISPLAY}
+              {"\n"}
             </a>
             <Button asChild size="sm" variant="brand">
               <a href={waLink()} target="_blank" rel="noopener noreferrer">
