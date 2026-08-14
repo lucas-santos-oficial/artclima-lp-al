@@ -161,5 +161,24 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
   }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility wave-rule {
+  background-image: var(--gradient-wave);
+}
+
+@utility text-wave {
+  background-image: var(--gradient-wave);
+  background-clip: text;
+  color: transparent;
 }
