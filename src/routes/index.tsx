@@ -178,17 +178,14 @@ function Index() {
       <Section className="pt-10 sm:pt-16">
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-3 py-1 text-xs font-bold tracking-wide text-secondary-foreground uppercase">
-              Atendimento rápido · Alagoas
-            </span>
             <h1 className="mt-5 text-3xl font-extrabold leading-[1.1] sm:text-5xl">
               Limpeza de ar-condicionado residencial{" "}
               <span className="text-wave">rápida em Alagoas</span>
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
               Seu ar-condicionado está com mau cheiro, acumulando sujeira ou não está
-              funcionando como antes? Conte com a Art-Climatização para cuidar da limpeza do
-              seu aparelho com atendimento ágil.
+              funcionando como antes? A Art-Climatização cuida da limpeza do seu aparelho com
+              atendimento rápido em Alagoas.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <CtaWhats>Quero limpar meu ar-condicionado</CtaWhats>
@@ -197,7 +194,7 @@ function Index() {
               </Button>
             </div>
             <p className="mt-4 text-sm text-muted-foreground">
-              Limpeza e higienização de ar-condicionado residencial.
+              {" "}
             </p>
           </div>
           <div className="relative">
