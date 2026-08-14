@@ -8,7 +8,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { PHONE_DISPLAY, PHONE_TEL, WA_MESSAGES, waLink } from "@/lib/whatsapp";
-import logoMark from "@/assets/logo-mark.png";
+import officialLogoAsset from "@/assets/art-climatizacao-logo.png.asset.json";
 import antes from "@/assets/antes-placeholder.jpg";
 import depois from "@/assets/depois-placeholder.jpg";
 import galeria1 from "@/assets/galeria-1.jpg";
@@ -53,15 +53,12 @@ function Logo({ className = "" }: { className?: string }) {
   return (
     <div className={`flex min-w-0 items-center gap-2 ${className}`}>
       <img
-        src={logoMark}
+        src={officialLogoAsset.url}
         alt="Art-Climatização"
         width={820}
         height={287}
         className="h-6 w-auto shrink-0 sm:h-7"
       />
-      <span className="truncate font-display text-base font-extrabold tracking-tight sm:text-lg">
-        Art-Climatização
-      </span>
     </div>
   );
 }
