@@ -53,15 +53,12 @@ function Logo({ className = "" }: { className?: string }) {
   return (
     <div className={`flex min-w-0 items-center gap-2 ${className}`}>
       <img
-        src={logoMark}
+        src={officialLogoAsset.url}
         alt="Art-Climatização"
         width={820}
         height={287}
         className="h-6 w-auto shrink-0 sm:h-7"
       />
-      <span className="truncate font-display text-base font-extrabold tracking-tight sm:text-lg">
-        Art-Climatização
-      </span>
     </div>
   );
 }
