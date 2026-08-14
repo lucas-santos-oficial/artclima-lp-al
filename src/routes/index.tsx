@@ -162,7 +162,7 @@ function Index() {
               href={`tel:${PHONE_TEL}`}
               className="hidden text-sm font-semibold text-muted-foreground hover:text-foreground sm:block"
             >
-              {PHONE_DISPLAY}
+              {"\n"}
             </a>
             <Button asChild size="sm" variant="brand">
               <a href={waLink()} target="_blank" rel="noopener noreferrer">
@@ -190,7 +190,7 @@ function Index() {
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <CtaWhats>Quero limpar meu ar-condicionado</CtaWhats>
               <Button asChild size="xl" variant="outlineBrand">
-                <a href={`tel:${PHONE_TEL}`}>Ligar {PHONE_DISPLAY}</a>
+                <a href={`tel:${PHONE_TEL}`}>{"\n"}</a>
               </Button>
             </div>
             <p className="mt-4 text-sm text-muted-foreground">
