@@ -194,7 +194,7 @@ function Index() {
               </Button>
             </div>
             <p className="mt-4 text-sm text-muted-foreground">
-              Limpeza e higienização de ar-condicionado residencial.
+              {" "}
             </p>
           </div>
           <div className="relative">
