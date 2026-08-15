@@ -118,10 +118,10 @@ const sinais = [
 ];
 
 const beneficios = [
-  { t: "Mais cuidado com o ambiente", d: "Remover a sujeira acumulada contribui para um ambiente mais agradável." },
-  { t: "Mais cuidado com o equipamento", d: "A limpeza faz parte dos cuidados básicos com o aparelho." },
-  { t: "Melhores condições de funcionamento", d: "Um aparelho limpo trabalha em condições mais adequadas." },
-  { t: "Menos desperdício", d: "Ajuda a evitar desperdícios relacionados ao acúmulo de sujeira." },
+  { t: "Ambiente mais saudável", d: "Remover a sujeira acumulada ajuda a deixar o ar do ambiente mais agradável e livre de odores." },
+  { t: "Equipamento mais durável", d: "A limpeza faz parte dos cuidados básicos que ajudam a prolongar a vida útil do aparelho." },
+  { t: "Melhor desempenho", d: "Um aparelho limpo trabalha em condições mais adequadas de refrigeração." },
+  { t: "Menos consumo de energia", d: "Sujeira acumulada faz o aparelho trabalhar mais, aumentando o gasto de energia." },
 ];
 
 const etapas = [
