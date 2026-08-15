@@ -49,7 +49,18 @@ export const Route = createFileRoute("/")({
   }),
 });
 
-function Logo({ className = "" }: { className?: string }) {
+function Logo({
+  className = "",
+  variant = "header",
+}: {
+  className?: string;
+  variant?: "header" | "footer";
+}) {
+  const sizeClass =
+    variant === "footer"
+      ? "h-10 w-auto shrink-0 sm:h-12 md:h-14"
+      : "h-8 w-auto shrink-0 sm:h-10 md:h-11";
+
   return (
     <div className={`flex min-w-0 items-center gap-2 ${className}`}>
       <img
@@ -57,7 +68,7 @@ function Logo({ className = "" }: { className?: string }) {
         alt="Art-Climatização"
         width={820}
         height={287}
-        className="h-6 w-auto shrink-0 sm:h-7"
+        className={sizeClass}
       />
     </div>
   );
@@ -416,7 +427,7 @@ function Index() {
       <footer className="border-t border-border px-5 py-10 pb-28 sm:pb-10">
         <div className="mx-auto grid w-full max-w-5xl gap-6 sm:grid-cols-2">
           <div>
-            <Logo />
+            <Logo variant="footer" />
             <p className="mt-3 max-w-sm text-sm text-muted-foreground">
               Limpeza e higienização de ar-condicionado residencial em Alagoas.
             </p>
@@ -446,14 +457,6 @@ function Index() {
         </div>
       </footer>
 
-      {/* BOTÃO FIXO MOBILE */}
-      <div className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-background/95 p-3 backdrop-blur sm:hidden">
-        <Button asChild size="xl" variant="whatsapp" className="w-full">
-          <a href={waLink()} target="_blank" rel="noopener noreferrer">
-            💬 Quero limpar meu ar-condicionado
-          </a>
-        </Button>
-      </div>
     </div>
   );
 }
