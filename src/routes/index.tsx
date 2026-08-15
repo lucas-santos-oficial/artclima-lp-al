@@ -133,28 +133,49 @@ const etapas = [
 
 const faq = [
   {
-    q: "Quanto custa a limpeza?",
-    a: "O valor depende do tipo e das condições do aparelho. Envie uma mensagem no WhatsApp contando qual é o seu equipamento para consultar as condições de atendimento.",
+    q: "Por que a limpeza do ar-condicionado é tão importante?",
+    a:
+      "Com o uso, o filtro e a serpentina interna acumulam poeira, ácaros, fungos e bactérias — o que reduz a qualidade do ar que você respira e pode agravar alergias, rinite e problemas respiratórios, especialmente em crianças e idosos. Além disso, a sujeira acumulada faz o aparelho trabalhar mais para resfriar, aumentando o consumo de energia e o desgaste dos componentes. A recomendação geral é higienizar a cada 3 a 6 meses de uso regular.",
   },
   {
-    q: "Quanto tempo demora?",
-    a: "O tempo varia conforme o aparelho e a situação encontrada. Pelo WhatsApp conseguimos te orientar melhor sobre o seu caso.",
+    q: "Quais os benefícios reais de manter a limpeza em dia?",
+    a:
+      "Ar mais limpo e saudável para a família, redução de maus odores, melhora no desempenho de refrigeração, economia na conta de luz e aumento da vida útil do equipamento — evitando gastos maiores com manutenção corretiva ou troca antecipada do aparelho.",
+  },
+  {
+    q: "Quanto custa a limpeza?",
+    a:
+      "O valor varia conforme o tipo de aparelho (split, janela, cassete, etc.), a metragem do ambiente e as condições de sujeira encontradas — por isso não trabalhamos com um preço fechado padrão. Para passar um orçamento justo e correto, pedimos o modelo do aparelho e a cidade pelo WhatsApp; a resposta costuma ser rápida.",
+  },
+  {
+    q: "Quanto tempo demora o serviço?",
+    a:
+      "Em geral, a higienização de um aparelho split leva entre 40 minutos e 1h30, dependendo do nível de sujeira e da acessibilidade da instalação. Quando há mais de um aparelho no mesmo endereço, o tempo é somado, mas o deslocamento é único — o que reduz o custo por aparelho.",
   },
   {
     q: "Vocês atendem no mesmo dia?",
-    a: "A disponibilidade varia conforme a agenda do dia. Consulte pelo WhatsApp para verificar o atendimento mais próximo.",
+    a:
+      "Buscamos encaixar atendimentos no mesmo dia sempre que a agenda da região permitir, principalmente para chamados no período da manhã. Fora isso, o prazo costuma ser de 1 a 2 dias úteis. Consulte pelo WhatsApp para confirmar o horário mais próximo disponível na sua região.",
   },
   {
-    q: "Vocês atendem minha cidade?",
-    a: "O atendimento é realizado em Alagoas. Envie sua localização pelo WhatsApp para confirmarmos o atendimento na sua região.",
+    q: "Vocês atendem toda Alagoas?",
+    a:
+      "O atendimento cobre Maceió e cidades da região metropolitana e do interior de Alagoas. Envie sua localização pelo WhatsApp para confirmarmos se sua região já está na rota do dia ou da semana.",
   },
   {
     q: "Quais tipos de ar-condicionado vocês limpam?",
-    a: "Trabalhamos com limpeza e higienização de ar-condicionado residencial. Nos diga pelo WhatsApp qual é o modelo do seu aparelho para confirmarmos.",
+    a:
+      "Fazemos higienização de aparelhos residenciais split (o mais comum), janela e portátil. Para modelos cassete ou piso-teto, também é possível atender — nos informe o modelo pelo WhatsApp para confirmarmos a viabilidade e o valor.",
+  },
+  {
+    q: "Como funciona o processo de limpeza?",
+    a:
+      "Higienizamos filtro, serpentina, ventilador (turbina) e dreno com produtos próprios para climatização, sem uso de água em excesso sobre partes elétricas, seguindo os cuidados técnicos recomendados para não danificar o equipamento.",
   },
   {
     q: "Como faço para agendar?",
-    a: "É só chamar no WhatsApp. A conversa começa entendendo a sua necessidade e, em seguida, combinamos o atendimento.",
+    a:
+      "É rápido: chame no WhatsApp informando o modelo do aparelho e sua cidade/bairro. Em poucos minutos confirmamos disponibilidade, valor e o melhor horário para o atendimento.",
   },
 ];
 
