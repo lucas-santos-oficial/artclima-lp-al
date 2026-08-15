@@ -59,7 +59,7 @@ function Logo({
   const sizeClass =
     variant === "footer"
       ? "h-10 w-auto shrink-0 sm:h-12 md:h-14"
-      : "h-8 w-auto shrink-0 sm:h-10 md:h-11";
+      : "h-9 w-auto shrink-0 sm:h-11 md:h-12";
 
   return (
     <div className={`flex min-w-0 items-center gap-2 ${className}`}>
