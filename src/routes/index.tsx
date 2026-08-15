@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
-import { PHONE_DISPLAY, PHONE_TEL, WA_MESSAGES, waLink } from "@/lib/whatsapp";
+import { PHONE_DISPLAY, PHONE_TEL, waLink } from "@/lib/whatsapp";
 import officialLogoAsset from "@/assets/art-climatizacao-logo.png.asset.json";
 import antes from "@/assets/antes-placeholder.jpg";
 import depois from "@/assets/depois-placeholder.jpg";
@@ -393,21 +393,6 @@ function Index() {
         </div>
       </Section>
 
-      {/* ÁREA DE ATENDIMENTO */}
-      <Section>
-        <div className="grid gap-6 rounded-2xl border border-border p-7 sm:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
-          <div>
-            <h2 className="text-2xl font-extrabold sm:text-4xl">Atendimento em Alagoas</h2>
-            <p className="mt-3 max-w-xl text-muted-foreground">
-              Atendemos residências em Alagoas. Envie sua localização pelo WhatsApp e
-              confirmamos a disponibilidade de atendimento na sua região.
-            </p>
-          </div>
-          <CtaWhats message={WA_MESSAGES.regiao} variant="brand">
-            Verificar atendimento na minha região
-          </CtaWhats>
-        </div>
-      </Section>
 
       {/* FAQ */}
       <Section className="bg-secondary/40">
