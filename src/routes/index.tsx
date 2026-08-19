@@ -343,8 +343,7 @@ function Index() {
       <Section>
         <h2 className="text-2xl font-extrabold sm:text-4xl">Nosso trabalho de perto</h2>
         <p className="mt-3 max-w-2xl text-muted-foreground">
-          Espaço reservado para fotos reais da Art-Climatização: antes, durante, depois e o
-          profissional realizando o serviço.
+          Registros reais de atendimentos: antes, durante e depois da higienização.
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
           {[
