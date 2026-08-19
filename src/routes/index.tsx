@@ -11,9 +11,10 @@ import { PHONE_DISPLAY, PHONE_TEL, waLink } from "@/lib/whatsapp";
 import officialLogoAsset from "@/assets/art-climatizacao-logo.png.asset.json";
 import antes from "@/assets/antes-placeholder.jpg";
 import depois from "@/assets/depois-placeholder.jpg";
-import galeria1 from "@/assets/galeria-1.jpg";
-import galeria2 from "@/assets/galeria-2.jpg";
 import galeria3 from "@/assets/galeria-3.jpg";
+import galeriaFiltro from "@/assets/galeria-filtro.png.asset.json";
+import galeriaLimpo from "@/assets/galeria-limpo.png.asset.json";
+import galeriaAberto from "@/assets/galeria-aberto.png.asset.json";
 
 const TITLE = "Limpeza de Ar-Condicionado Residencial em Alagoas | Art-Climatização";
 const DESCRIPTION =
@@ -254,8 +255,7 @@ function Index() {
           {/* Substitua as imagens em src/assets por fotos reais do MESMO aparelho */}
           <BeforeAfterSlider beforeSrc={antes} afterSrc={depois} />
           <p className="mt-3 text-xs text-muted-foreground">
-            Arraste a divisória para comparar. Imagens ilustrativas — substituir por fotos
-            reais da Art-Climatização.
+            Arraste a divisória para comparar.
           </p>
         </div>
         <div className="mt-8">
@@ -348,9 +348,9 @@ function Index() {
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
           {[
-            { src: galeria1, legenda: "Durante — profissional realizando a limpeza", alt: "Profissional realizando limpeza de ar-condicionado residencial" },
-            { src: galeria2, legenda: "Durante — higienização do filtro", alt: "Filtro de ar-condicionado sendo higienizado" },
-            { src: galeria3, legenda: "Depois — aparelho limpo no ambiente", alt: "Ar-condicionado limpo instalado em quarto residencial" },
+            { src: galeriaAberto.url, legenda: "Durante — aparelho aberto para higienização", alt: "Ar-condicionado aberto durante a higienização" },
+            { src: galeriaFiltro.url, legenda: "Durante — higienização do filtro", alt: "Serpentina de ar-condicionado com espuma de limpeza" },
+            { src: galeriaLimpo.url, legenda: "Depois — aparelho limpo no ambiente", alt: "Ar-condicionado split limpo instalado na parede" },
           ].map((g) => (
             <figure key={g.legenda} className="overflow-hidden rounded-xl border border-border">
               <img
@@ -367,9 +367,6 @@ function Index() {
             </figure>
           ))}
         </div>
-        <p className="mt-3 text-xs text-muted-foreground">
-          Imagens ilustrativas — substituir por fotos reais dos atendimentos.
-        </p>
       </Section>
 
       {/* PROVA SOCIAL */}
@@ -387,7 +384,6 @@ function Index() {
                 <div className="h-2.5 w-11/12 rounded-full bg-muted" />
                 <div className="h-2.5 w-8/12 rounded-full bg-muted" />
               </div>
-              <p className="mt-4 text-xs">Espaço reservado para avaliação real do Google.</p>
             </div>
           ))}
         </div>
