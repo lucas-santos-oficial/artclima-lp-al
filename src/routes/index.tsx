@@ -70,8 +70,11 @@ function Logo({
       <img
         src={officialLogoAsset.url}
         alt="Art-Climatização"
-        width={820}
-        height={287}
+        width={1254}
+        height={1254}
+        decoding="async"
+        loading={variant === "footer" ? "lazy" : "eager"}
+        {...(variant === "header" ? { fetchPriority: "high" as const } : {})}
         className={sizeClass}
       />
     </div>
