@@ -240,6 +240,9 @@ function Index() {
               alt="Quarto residencial com ar-condicionado split limpo na parede"
               width={1000}
               height={1000}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               className="aspect-square w-full rounded-2xl border border-border object-cover shadow-[var(--shadow-soft)]"
             />
           </div>
