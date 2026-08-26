@@ -32,7 +32,10 @@ export const Route = createFileRoute("/")({
       { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [
+      { rel: "canonical", href: "/" },
+      { rel: "preload", as: "image", href: galeria3, fetchpriority: "high" },
+    ],
     scripts: [
       {
         type: "application/ld+json",
@@ -67,8 +70,11 @@ function Logo({
       <img
         src={officialLogoAsset.url}
         alt="Art-Climatização"
-        width={820}
-        height={287}
+        width={1254}
+        height={1254}
+        decoding="async"
+        loading={variant === "footer" ? "lazy" : "eager"}
+        {...(variant === "header" ? { fetchPriority: "high" as const } : {})}
         className={sizeClass}
       />
     </div>
@@ -234,6 +240,9 @@ function Index() {
               alt="Quarto residencial com ar-condicionado split limpo na parede"
               width={1000}
               height={1000}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               className="aspect-square w-full rounded-2xl border border-border object-cover shadow-[var(--shadow-soft)]"
             />
           </div>
