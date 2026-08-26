@@ -8,13 +8,13 @@ import {
 import { Button } from "@/components/ui/button";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { PHONE_DISPLAY, PHONE_TEL, waLink } from "@/lib/whatsapp";
-import officialLogoAsset from "@/assets/art-climatizacao-logo.png.asset.json";
-import antes from "@/assets/antes-placeholder.jpg";
-import depois from "@/assets/depois-placeholder.jpg";
-import galeria3 from "@/assets/galeria-3.jpg";
-import galeriaFiltro from "@/assets/galeria-filtro.png.asset.json";
-import galeriaLimpo from "@/assets/galeria-limpo.png.asset.json";
-import galeriaAberto from "@/assets/galeria-aberto.png.asset.json";
+import officialLogo from "@/assets/logo.webp";
+import antes from "@/assets/antes.webp";
+import depois from "@/assets/depois.webp";
+import galeria3 from "@/assets/hero.webp";
+import galeriaFiltro from "@/assets/galeria-filtro.webp";
+import galeriaLimpo from "@/assets/galeria-limpo.webp";
+import galeriaAberto from "@/assets/galeria-aberto.webp";
 
 const TITLE = "Limpeza de Ar-Condicionado Residencial em Alagoas | Art-Climatização";
 const DESCRIPTION =
@@ -68,10 +68,10 @@ function Logo({
   return (
     <div className={`flex min-w-0 items-center gap-2 ${className}`}>
       <img
-        src={officialLogoAsset.url}
+        src={officialLogo}
         alt="Art-Climatização"
-        width={1254}
-        height={1254}
+        width={256}
+        height={256}
         decoding="async"
         loading={variant === "footer" ? "lazy" : "eager"}
         {...(variant === "header" ? { fetchPriority: "high" as const } : {})}
@@ -238,8 +238,8 @@ function Index() {
             <img
               src={galeria3}
               alt="Quarto residencial com ar-condicionado split limpo na parede"
-              width={1000}
-              height={1000}
+              width={760}
+              height={760}
               loading="eager"
               fetchPriority="high"
               decoding="async"
@@ -356,16 +356,16 @@ function Index() {
         </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-3">
           {[
-            { src: galeriaAberto.url, legenda: "Durante — aparelho aberto para higienização", alt: "Ar-condicionado aberto durante a higienização" },
-            { src: galeriaFiltro.url, legenda: "Durante — higienização do filtro", alt: "Serpentina de ar-condicionado com espuma de limpeza" },
-            { src: galeriaLimpo.url, legenda: "Depois — aparelho limpo no ambiente", alt: "Ar-condicionado split limpo instalado na parede" },
+            { src: galeriaAberto, legenda: "Durante — aparelho aberto para higienização", alt: "Ar-condicionado aberto durante a higienização" },
+            { src: galeriaFiltro, legenda: "Durante — higienização do filtro", alt: "Serpentina de ar-condicionado com espuma de limpeza" },
+            { src: galeriaLimpo, legenda: "Depois — aparelho limpo no ambiente", alt: "Ar-condicionado split limpo instalado na parede" },
           ].map((g) => (
             <figure key={g.legenda} className="overflow-hidden rounded-xl border border-border">
               <img
                 src={g.src}
                 alt={g.alt}
-                width={1000}
-                height={1000}
+                width={640}
+                height={640}
                 loading="lazy"
                 className="aspect-square w-full object-cover"
               />
