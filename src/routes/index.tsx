@@ -236,13 +236,13 @@ function Index() {
             <div className="absolute -inset-3 -z-10 rounded-3xl wave-rule opacity-10 blur-2xl" />
             <img
               src={galeria3}
-              alt="Quarto residencial com ar-condicionado split limpo na parede"
-              width={760}
-              height={760}
+              alt="Sala de estar com ar-condicionado split limpo instalado na parede"
+              width={1120}
+              height={747}
               loading="eager"
               fetchPriority="high"
               decoding="async"
-              className="aspect-square w-full rounded-2xl border border-border object-cover shadow-[var(--shadow-soft)]"
+              className="aspect-[3/2] w-full rounded-2xl border border-border object-cover shadow-[var(--shadow-soft)]"
             />
           </div>
         </div>
