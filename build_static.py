@@ -81,11 +81,16 @@ async def main():
     def fix_src(m):
         url = m.group(2)
         base = os.path.basename(url.split("?")[0])
-        stem = re.sub(r"-[A-Za-z0-9_]{6,}\.(webp|png|jpg|jpeg|svg)$", "", base)
-        stem = re.sub(r"\.(webp|png|jpg|jpeg|svg)$", "", stem)
+        stem = re.sub(r"\.(webp|png|jpg|jpeg|svg)$", "", base)
+        if stem not in mapping:
+            stem = re.sub(r"-[A-Za-z0-9_]{6,}$", "", stem)
         return f'{m.group(1)}="{mapping.get(stem, url)}"'
 
     html = re.sub(r'(src|href)="(/[^"]*\.(?:webp|png|jpg|jpeg|svg)[^"]*)"', fix_src, html)
+
+    faces = "".join(l for l in open(os.path.join(ROOT, "src", "styles.css"), encoding="utf-8").read().splitlines() if l.startswith("@font-face")).replace("'/fonts/", "'fonts/")
+    if "@font-face" not in css:
+        css = faces + css
 
     hero = mapping.get("hero", "images/hero.webp")
     app_js = open(os.path.join(ROOT, "static-src", "app.js"), encoding="utf-8").read()
