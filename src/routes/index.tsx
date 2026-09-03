@@ -215,8 +215,7 @@ function Index() {
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <h1 className="mt-5 text-3xl font-extrabold leading-[1.1] sm:text-5xl">
-              Limpeza de ar-condicionado residencial{" "}
-              <span className="text-wave">rápida em Alagoas</span>
+              Limpeza de ar-condicionado em Maceió
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
               Seu ar-condicionado está com mau cheiro, acumulando sujeira ou não está
