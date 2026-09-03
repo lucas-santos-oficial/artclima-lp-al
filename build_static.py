@@ -108,7 +108,9 @@ async def main():
         '<link rel="icon" href="favicon.png">'
         f"<style>{css}</style>"
     )
-    html = html.replace("<head>", "<head>" + head_top, 1)
+    html = re.sub(r"<html[^>]*>", '<html lang="pt-BR">', html, count=1)
+    html = re.sub(r'\s(?:data-tsd-source|data-lov-id|data-lov-name|data-component-path|data-component-line|data-component-file|data-component-name|data-component-content)="[^"]*"', "", html)
+    html = re.sub(r"<head[^>]*>", "<head>" + head_top.replace("\\", "\\\\"), html, count=1)
     noscript = (
         f'<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={GTM}"'
         ' height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>'
