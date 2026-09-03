@@ -16,9 +16,9 @@ import galeriaFiltro from "@/assets/galeria-filtro.webp";
 import galeriaLimpo from "@/assets/galeria-limpo.webp";
 import galeriaAberto from "@/assets/galeria-aberto.webp";
 
-const TITLE = "Limpeza de Ar-Condicionado Residencial em Alagoas | Art-Climatização";
+const TITLE = "Limpeza de Ar-Condicionado em Maceió | Art-Climatização";
 const DESCRIPTION =
-  "Precisa de limpeza de ar-condicionado residencial em Alagoas? Fale com a Art-Climatização pelo WhatsApp e consulte a disponibilidade de atendimento.";
+  "Precisa de limpeza de ar-condicionado em Maceió? Fale com a Art-Climatização pelo WhatsApp e consulte a disponibilidade de atendimento.";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -215,13 +215,12 @@ function Index() {
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div>
             <h1 className="mt-5 text-3xl font-extrabold leading-[1.1] sm:text-5xl">
-              Limpeza de ar-condicionado residencial{" "}
-              <span className="text-wave">rápida em Alagoas</span>
+              Limpeza de ar-condicionado em Maceió
             </h1>
             <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
               Seu ar-condicionado está com mau cheiro, acumulando sujeira ou não está
               funcionando como antes? A Art-Climatização cuida da limpeza do seu aparelho com
-              atendimento ágil em Alagoas.
+              atendimento rápido em Maceió.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <CtaWhats>Quero limpar meu ar-condicionado</CtaWhats>
