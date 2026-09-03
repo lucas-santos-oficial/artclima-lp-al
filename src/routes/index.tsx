@@ -220,7 +220,7 @@ function Index() {
             <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
               Seu ar-condicionado está com mau cheiro, acumulando sujeira ou não está
               funcionando como antes? A Art-Climatização cuida da limpeza do seu aparelho com
-              atendimento ágil em Alagoas.
+               atendimento rápido em Maceió.
             </p>
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <CtaWhats>Quero limpar meu ar-condicionado</CtaWhats>
