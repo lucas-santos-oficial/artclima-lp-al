@@ -16,9 +16,9 @@ import galeriaFiltro from "@/assets/galeria-filtro.webp";
 import galeriaLimpo from "@/assets/galeria-limpo.webp";
 import galeriaAberto from "@/assets/galeria-aberto.webp";
 
-const TITLE = "Limpeza de Ar-Condicionado Residencial em Alagoas | Art-Climatização";
+const TITLE = "Limpeza de Ar-Condicionado em Maceió | Art-Climatização";
 const DESCRIPTION =
-  "Precisa de limpeza de ar-condicionado residencial em Alagoas? Fale com a Art-Climatização pelo WhatsApp e consulte a disponibilidade de atendimento.";
+  "Precisa de limpeza de ar-condicionado em Maceió? Fale com a Art-Climatização pelo WhatsApp e consulte a disponibilidade de atendimento.";
 
 export const Route = createFileRoute("/")({
   component: Index,
